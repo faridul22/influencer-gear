@@ -7,12 +7,19 @@ body{
     display: flex;
     justify-content: center;
 }
+h2{
+   margin-left: 170px; 
+}
+
 h1{
-     font-size: 40px;
+ font-size: 40px;
+}
+#photo:hover{
+    transform: scale(1.0) rotate(30deg);
+    transition: transform 1s ease-in-out ;
 }
 .half-width{
-    width: 50%;
-    padding: 10%;
+    width: 40%;
     display: inline-block;
 }
 .link-button{
@@ -63,6 +70,9 @@ Popular Collection styles
     color: #E02C6D;
     margin: 30px;
 }
+#future-products{
+    margin-left: 30px;
+}
  /*---------------
   footer styles 
   ----------------*/
@@ -71,9 +81,32 @@ Popular Collection styles
     color: white;
     height: 200px;
 }
+
 #icon{
     margin-left: 10px;
 }
-#icon:hover{
-    color: #3a3adb;
+
+
+/*---------------
+ media queries 
+ ----------------*/
+
+
+ /* Mobile Device */
+ @media only screen and (max-width:688px){
+  .container,.container-2{
+      display: block;
+      grid-template-columns: repeat(1, 1fr);
+  }
+  .container-2{
+      border: none;
+  }
+ }
+
+ /* Tablet devices */
+ @media only screen and (min-width:688px) and (max-width:992px) {
+.container,.container-2{
+    grid-template-columns: repeat(2, 1fr);
 }
+   
+ }
