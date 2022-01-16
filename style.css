@@ -1,0 +1,79 @@
+/* common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* Influencer-products style */
+.container{
+    display: flex;
+    justify-content: center;
+}
+h1{
+     font-size: 40px;
+}
+.half-width{
+    width: 50%;
+    padding: 10%;
+    display: inline-block;
+}
+.link-button{
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 10px 40px;
+    color: white;
+    border-radius: 30px;
+    display: inline-block;
+}
+.half-width img{
+     width: 100%;
+}
+/*-------------------------- 
+Popular Collection styles
+---------------------------- */
+.section-title{
+    text-align: center;
+}
+.container-2{ 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;     
+} 
+.product-deatil{
+    box-shadow: 2px 2px 10px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px 0;
+}
+.fa-star{
+    font-size: 10px;
+}
+.fa-star.filled{
+    color: orange;
+}
+.fa-star.empty{
+    color: #dfd4c5e3;
+}
+.product-info> div> p{
+        color: #918b7f;
+}
+.see-more,a{
+    text-align: right;
+    text-decoration: none;
+    color: #E02C6D;
+    margin: 30px;
+}
+ /*---------------
+  footer styles 
+  ----------------*/
+#footer-color{
+    background-color: black;
+    color: white;
+    height: 200px;
+}
+#icon{
+    margin-left: 10px;
+}
+#icon:hover{
+    color: #3a3adb;
+}
